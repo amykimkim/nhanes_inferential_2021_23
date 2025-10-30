@@ -16,4 +16,10 @@ P-value: nan
 There is no statistically significant difference in the mean sedentary behavior time between married and not married individuals.
 
 ## Question 3 PYTHON:
-To investigate how age and marital status affect systolic blood pressure, I will first load and merge the relevant datasets (blood pressure, age, and marital status). Then, I will clean the marital status column as before. Finally, I will use a multiple linear regression model to quantify the individual and combined effects of age and marital status on systolic blood pressure.
+- To investigate how age and marital status affect systolic blood pressure, I first loaded and merge the relevant datasets (blood pressure, age, and marital status). 
+- Then, I cleaned the marital status column as before. 
+- I used a multiple linear regression model to quantify the individual and combined effects of age and marital status on systolic blood pressure.
+- Average difference in systolic blood pressure between individuals who are 'not married' compared to the 'married' group is 1.342 
+- systolic blood pressure is expected to change for every one-year increase in age by 0.3952
+- R squared value of 0.134 indicates that approximately 13.4% of the variation in the dependent variable can be explained by the independent variable
+- Both P-values for marital status and age was less than 0.05, suggesting that the predictor has a statistically significant effect on systolic blood pressure.

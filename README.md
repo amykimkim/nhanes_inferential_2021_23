@@ -23,3 +23,11 @@ There is no statistically significant difference in the mean sedentary behavior 
 - systolic blood pressure is expected to change for every one-year increase in age by 0.3952
 - R squared value of 0.134 indicates that approximately 13.4% of the variation in the dependent variable can be explained by the independent variable
 - Both P-values for marital status and age was less than 0.05, suggesting that the predictor has a statistically significant effect on systolic blood pressure.
+
+## Question 4 PYTHON:
+- To investigate if weight and minutes of sedentary behavior has a correlation, I first loaded and merged the relevant datasets
+- A Pearson correlation coefficient was used for the two continuous variables (self-reported weight and minutes of sedentary behavior) to measure the strength and direction of a linear relationship between them
+- Pearson correlation between self-reported weight and sedentary behavior: 0.1560. Suggests that there is no linear relationship between self-reported weight and sedentary behavior. But correlation does not imply causation
+
+## Question 5 PYTHON (creative analysis): Is there a correlation between hepatitis B lab Antibodies (LBXHBS) and minutes of sedentary behavior (PAD680)?
+- Cleaned the LBXHBS column by converting positive (1.0) to 1 and negative (2.0) to 0, and ensure both columns are free of missing values

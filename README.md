@@ -1,5 +1,6 @@
 # nhanes_inferential_2021_23
 
+
 ## Question 1 PYTHON:
 - I loaded in the xpt file 
 - I cleaned the data for 'DMDMARTZ' so that there are two categories: married and unmarried. Left out the nulls
@@ -8,12 +9,12 @@
 - Result: Chi-square statistic: 129.1738, P-value: 0.0000 --> would indicate a significant association between marital status and education level since it is less than 0.05
 
 ## Question 2 PYTHON:
-- I loaded in the xpt file 
-- I cleaned the data for 'PAD680' to remove values 7777, 9999, and null
-- T-test to compare the means of two independent groups
-T-statistic: nan
-P-value: nan
-There is no statistically significant difference in the mean sedentary behavior time between married and not married individuals.
+- Loaded in the xpt file 
+- Cleaned the data for 'PAD680' to remove values 7777, 9999, and null
+- T-test calculated to compare the means of two independent groups
+- T-statistic: nan
+- P-value: nan
+- There is no statistically significant difference in the mean sedentary behavior time between married and not married individuals.
 
 ## Question 3 PYTHON:
 - To investigate how age and marital status affect systolic blood pressure, I first loaded and merge the relevant datasets (blood pressure, age, and marital status). 
@@ -30,4 +31,7 @@ There is no statistically significant difference in the mean sedentary behavior 
 - Pearson correlation between self-reported weight and sedentary behavior: 0.1560. Suggests that there is no linear relationship between self-reported weight and sedentary behavior. But correlation does not imply causation
 
 ## Question 5 PYTHON (creative analysis): Is there a correlation between hepatitis B lab Antibodies (LBXHBS) and minutes of sedentary behavior (PAD680)?
-- Cleaned the LBXHBS column by converting positive (1.0) to 1 and negative (2.0) to 0, and ensure both columns are free of missing values
+- The LBXHBS column was transformed: values of 1.0 were mapped to 'positive' (numeric 2), and 2.0 to 'negative' (numeric 0)
+- The PAD680 column (sedentary behavior in minutes) was cleaned by replacing special codes (7777.0 and 9999.0) with missing values.
+- The two dataframes were merged and  Pearson correlation coefficient between the numerical hepatitis B antibodies (hepb_numeric) and sedentary behavior (PAD680) was calculated to be approximately -0.0174.
+- The correlation indicates a very weak, almost negligible, negative linear relationship. The scatter plot further illustrates this, showing no discernible pattern or trend between the two variables.
